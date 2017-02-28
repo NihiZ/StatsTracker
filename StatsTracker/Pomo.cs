@@ -46,7 +46,7 @@ namespace StatsTracker
         // Eventhandler that automatically changes the chosen value to the same on all consecutive project Comboboxes
         private void cmbProject_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // we iterate through all pomos in the pomos List and compare the index of all pomos with 'this' pomo
+            // iterate through all pomos in the 'pomos' List and compare the index of all pomos with 'this' pomo
             foreach (Pomo p in Form1.pomos) {
                 if (index < p.index) {
                     p.cmbProject.SelectedIndex = cmbProject.SelectedIndex;
